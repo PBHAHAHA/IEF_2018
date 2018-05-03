@@ -25,4 +25,5 @@ table{padding-left: 10px}
 .xinxi1.lianxi1,.nengli1,.jiaoyu1,.xiangmu1{
     float: left;
     padding-left: 10px;
+    border:0px solid;
 }
