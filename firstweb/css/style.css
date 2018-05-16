@@ -96,9 +96,10 @@ button{
 }
 .two_main_content img{
     float: left;
-    width: 60px;
-    height: 80px;
     margin-right: 10px;
+}
+.two_main_content_1{
+    float:right; 
 }
 .two_main_content_right1,{
     margin-right: 0;
@@ -221,8 +222,9 @@ button{
 }
 
 
+
 .seven{
-    margin-top: 50px;
+    margin-top: 0px;
     height: 400px;
 }
 .seven_send{
@@ -232,7 +234,7 @@ button{
     text-align: center;
     border: 1px solid #ccc;
     width: 300px;
-    margin: 70px;
+    margin: 60px;
 
 }
 .seven_main{
@@ -243,6 +245,10 @@ button{
 .seven_send input{
     width:200px;
     margin:10px auto;
+}
+.seven_send textarea{
+    margin:10px 40px;
+    height: 70px;
 }
 .seven_send input:last-child{
     width:200px;
@@ -265,6 +271,13 @@ button{
 }
 .seven h2{
     margin-bottom: 20px;
+}
+.a{
+    color: #aaa;
+}
+.c,.d,.b{
+    margin: 20px;
+    color: #aaa;
 }
 
 
