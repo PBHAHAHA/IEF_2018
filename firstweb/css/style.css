@@ -200,7 +200,7 @@ button{
 
 .six{
     border-bottom: 1px solid #ccc;
-    height: 800px;
+    height: 900px;
 }
 .six_main{
     width:960px;
@@ -216,9 +216,30 @@ button{
 .six_main h3{
     font-size: 35px;
 }
-.photo img{
-    width:400px;
-    margin:10px;
+
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.photo_main{
+    position: relative;
+    width:470px;
+    height: 330px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.photo1{
+    position: absolute;
+    background:rgba(20, 20, 20, 0.7);
+    width:100%;
+    height: 100%;
+    color:black;
+
+}
+
+.photo_main:hover .photo1{
+    top:0
 }
 
 
