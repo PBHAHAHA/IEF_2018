@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3的小游戏</title>
+</head>
+<body>
+    <input type="number" id="math2" placeholder="请输入一个数字">
+    <button id="submit1">跟三有关吗？</button>
+    <p id="p1"></p>
+    <script>
+        
+            submit2=document.getElementById("submit1"),
+            pp=document.getElementById("p1");
+            submit2.onclick=function(){
+            /*如果要每次触发不同的math1，则必须要将math1放在函数内部在触发事件时获取。
+            如果是全局变量则永远为空*/
+            var math1=document.getElementById("math2").value;
+            if(math1%3==0 || parseInt(math1/10)==3 || parseInt(math1%10)==3){
+                pp.innerHTML="PA";
+            }
+            else{
+                pp.innerHTML=math1;
+            }
+        }
+        
+    </script>
+</body>
+</html>
