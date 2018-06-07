@@ -72,10 +72,22 @@
             </div>
             <button type="button" onclick="alert('欢迎查看我的简历!下面的是我的其他爱好')">其他爱好</button>
             <p id="aihao">读书、运动（篮球，羽毛球）、象棋</p>
-            
+            <button id="nihao">你好！可以点击</button>
         </div>
         <script>
-            console.log(document.getElementById("aihao").innerHTML)
+            console.log(document.getElementById("aihao").innerHTML);
+            var nh=document.getElementById("nihao");
+            nh.onclick=function(){
+                var time=new Date().getHours();
+                console.log(time);
+                if(19<=time<6){
+                    alert("晚上好！")
+                }else if(6<=time<12){
+                    alert("上午好！")
+                }else{
+                    alert("下午好！")
+                }
+            }
         </script>
     </body>
 </html>
