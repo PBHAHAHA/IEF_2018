@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smile</title>
+    <style>
+        .smile{
+            width: 480px;height: 480px;
+            background-image: url("img/smile.jpg");
+            background-position-Y:0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="smile" id="smile"></div>
+    <script>
+        var smile=document.getElementById("smile");
+        var timer;
+        var smileY=parseInt(getComputedStyle(smile,null).backgroundPositionY);
+        console.log(smileY);
+        //顺序播放
+        function play(){
+               smileY-=480;
+               console.log(smileY);
+               smile.style.backgroundPositionY=smileY+"px";
+               if(smileY===-7680){
+                   clearInterval(timer);
+                   exPlay();  
+                   timer1=setInterval(exPlay,100);    
+               }       
+        }
+        timer=setInterval(play,100);
+        //倒序返回
+        function exPlay(){
+            smileY+=480;
+            smile.style.backgroundPositionY=smileY+"px";
+            if(smileY===0){
+                clearInterval(timer1);
+                play();
+                timer=setInterval(play,100);
+            }
+        }
+
+    </script>
+</body>
+</html>
